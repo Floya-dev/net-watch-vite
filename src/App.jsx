@@ -57,7 +57,7 @@ function App() {
         <div className="flex items-center justify-between px-8 py-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
-              <img src="../images/netwatch-logo-star.png" alt="Logo" className="w-full h-full object-contain" />
+              <img src={`${import.meta.env.BASE_URL}images/netwatch-logo-star.png`} alt="Logo" className="w-full h-full object-contain" />
             </div>
             <span className="text-white font-semibold text-lg tracking-wide">Net-watch</span>
           </div>
@@ -393,7 +393,7 @@ function Sluzby() {
         <div className="grid grid-cols-2 gap-4">
           {serviceImages.map((item, i) => (
             <div key={i} className="aspect-square rounded-xl overflow-hidden hover:ring-2 hover:ring-violet-500 transition-all group relative">
-              <img src={`/images/${item.img}`} alt="" className="w-full h-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}images/${item.img}`} alt="" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all flex items-center justify-center">
                 <span className="text-white/0 group-hover:text-white/90 text-sm font-medium transition-all">{item.text}</span>
               </div>
@@ -422,7 +422,7 @@ function Galerie() {
       <div className="grid grid-cols-3 gap-4 max-w-4xl w-full">
         {galleryImages.map((item, i) => (
           <div key={i} className="aspect-square rounded-xl overflow-hidden hover:ring-2 hover:ring-violet-500 transition-all cursor-pointer group relative">
-            <img src={`/images/${item.img}`} alt="" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}images/${item.img}`} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all flex items-center justify-center">
               <span className="text-white/0 group-hover:text-white/90 text-sm font-medium transition-all">{item.text}</span>
             </div>
