@@ -552,23 +552,23 @@ function Kontakty() {
             <h3 className="font-semibold text-white mb-4">Zastupitelé</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">JN</div>
+                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">OV</div>
                 <div>
-                  <p className="font-medium text-white">Jan Novák</p>
+                  <p className="font-medium text-white">Bc. Ondřej Vondrys</p>
                   <p className="text-slate-400 text-sm">Ředitel</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">ES</div>
+                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">JK</div>
                 <div>
-                  <p className="font-medium text-white">Eva Svobodová</p>
+                  <p className="font-medium text-white">Ing. Jan Krym</p>
                   <p className="text-slate-400 text-sm">Vedoucí technického oddělení</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">MP</div>
+                <div className="w-12 h-12 rounded-xl bg-violet-600/20 flex items-center justify-center text-violet-400 font-semibold border border-violet-500/30">LL</div>
                 <div>
-                  <p className="font-medium text-white">Martin Procházka</p>
+                  <p className="font-medium text-white">Luděk Landa</p>
                   <p className="text-slate-400 text-sm">Bezpečnostní analytik</p>
                 </div>
               </div>
@@ -576,7 +576,7 @@ function Kontakty() {
           </div>
           
           <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700 space-y-3">
-            <p><strong className="text-violet-400">Adresa:</strong> <span className="text-slate-300">Praha 5, Na Pankráci 1234/56, 140 00</span></p>
+            <p><strong className="text-violet-400">Adresa:</strong> <span className="text-slate-300">1a, Pikrtova 1737, Nusle, 140 00 Praha 4</span></p>
             <p><strong className="text-violet-400">Telefon:</strong> <span className="text-slate-300">+420 123 456 789</span></p>
             <p><strong className="text-violet-400">E-mail:</strong> <span className="text-slate-300">info@netwatch.cz</span></p>
             <p><strong className="text-violet-400">IČO:</strong> <span className="text-slate-300">12345678</span></p>
@@ -586,8 +586,16 @@ function Kontakty() {
         <div className="space-y-6">
           <div className="p-6 bg-slate-800/50 rounded-xl border border-slate-700">
             <h3 className="font-semibold text-white mb-4">Naše sídlo</h3>
-            <div className="aspect-video bg-slate-900 border border-slate-600 rounded-xl flex items-center justify-center">
-              <span className="text-slate-500">Mapa</span>
+            <div className="aspect-video bg-slate-900 border border-slate-600 rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=14.43614%2C50.04736%2C14.44614%2C50.05736&amp;layer=mapnik&amp;marker=50.05236%2C14.44114"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Mapa sídla"
+              />
             </div>
           </div>
           
@@ -609,9 +617,9 @@ function Kontakty() {
 
 function Dukaz() {
   const reviews = [
-    { name: 'Petr Svoboda', company: 'TechCorp s.r.o.', text: 'Služby Net-watch nám pomohly odhalit kritické bezpečnostní riziko v naší infrastruktuře.', rating: 5 },
+    { name: 'Mgr. Jana Horáková', company: 'Telekom a.s.', text: 'Služby Net-watch nám pomohly odhalit kritické bezpečnostní riziko v naší infrastruktuře.', rating: 5 },
     { name: 'Marie Kovářová', company: 'FinanceHub a.s.', text: 'Díky penetračnímu testování od Net-watch jsme získali certifikaci ISO 27001.', rating: 5 },
-    { name: 'Tomáš Dvořák', company: 'InnovateTech', text: 'Nejlepší investice do bezpečnosti. Jejich tým je vždy k dispozici.', rating: 4 },
+    { name: 'Ing. Tomáš Dvořák', company: 'InnovateTech', text: 'Nejlepší investice do bezpečnosti. Jejich tým je vždy k dispozici.', rating: 4 },
     { name: 'Anna Procházková', company: 'MediaGroup', text: 'Školení zaměstnanců výrazně snížilo počet bezpečnostních incidentů.', rating: 5 },
     { name: 'Martin Horák', company: 'RetailPlus', text: 'Monitoring sítí nám ušetřil statisíce korun díky včasné detekci hrozeb.', rating: 5 },
     { name: 'Zdeňka Nová', company: 'HealthCare Solutions', text: 'Vynikající bezpečnostní audit. Identifikovali všechny slabiny.', rating: 4 },
